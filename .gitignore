@@ -1,18 +1,29 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Python
+__pycache__/
+*.py[cod]
+.eggs/
+dist/
+build/
 
-# Other files and folders
-.settings/
+# Jupyter
+.ipynb_checkpoints/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Virtual environments
+.venv/
+venv/
+env/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ── Project-specific ──────────────────────────────────────────
+# DO commit: data/*.parquet, results/*.png, results/*.csv
+# DO NOT commit large model files or temp outputs
+*.log
+*.tmp
+models/
